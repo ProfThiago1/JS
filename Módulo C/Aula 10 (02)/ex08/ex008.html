@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="nome"> 
+        <h1> Calculadora de operações básicas </h1>
+        <input type="text" id="name" placeholder="Digite seu nome" oninput="escreveu()">
+    
+
+    <div id="numbers">
+        <input type="number" name="txtn1" placeholder="Digite um número" id="txtn1" > &
+        <input type="number" name="txtn2" placeholder="Digite um número" id="txtn2" >
+    </div>
+    <div id="operações">
+        <h2> Qual operação você gostaria de fazer ? </h2>
+        <input type="button" value="+" id ="plus" onclick="somar()">
+        <input type="button" value="-" id="minus" onclick="subtrair()">
+        <input type="button" value="*" id="times" onclick="multiplicar()">
+        <input type="button" value="/" id="division" onclick="dividir()">
+    </div>
+    <div id="res"> 
+        <h2> Resultado:</h2>
+        <p id="text_r"> </p> </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

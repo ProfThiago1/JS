@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Verificação de nacionalidade </title>
+    <style>
+        body{
+            font: normal 16pt Arial
+        }
+        div#res{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Verificando a nacionalidade</h1>
+    <input type="text" name="nome" placeholder="Qual o seu nome?" id="nome">
+   <input type="tel" name="nac" placeholder="De qual país você veio?" id="nac">
+   <input type="button" value="Enviar" id="b1" onclick="clicou()">
+    <div id="res"> </div>
+    
+    <script>
+        var nome;
+    function clicou() {
+        var nac = window.document.getElementById('nac').value;
+        let res = window.document.querySelector('div#res');
+        nome = window.document.getElementById('nome').value;
+
+        if (nac != 'Brasil' ) {
+            res.innerHTML =`Hi, ${nome}. You're not brasilian.`
+        } else{
+            res.innerHTML =`Olá, ${nome}. Você é brasileiro(a).`
+        }
+        
+    }
+
+
+
+    </script>
+</body>
+</html>

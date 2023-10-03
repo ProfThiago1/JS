@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+div#nome {
+    
+    background-color: white;
+    text-align: center;
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 5px 5px 5px white;
+}
+#name{
+
+    border-radius: 5px;
+    text-align: center;
+}
+div#numbers {
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+#txtn1{
+    text-align: center;
+    border-radius: 5px;
+}
+
+#txtn2{
+    text-align: center;
+    border-radius: 5px;
+}
+
+#plus{
+    background-color: black;
+    color: white;
+    border-radius: 20%;
+}
+
+#minus{
+    
+    border-radius: 20%;
+}
+
+#times{
+    background-color: black;
+    color: white;
+    border-radius: 20%;
+}
+
+#division{
+    border-radius: 20%;
+}
